@@ -120,6 +120,12 @@
   <data name="ControlTitle_settings.Text" xml:space="preserve">
     <value>EmbedViewer Settings</value>
   </data>
+  <data name="lblClientid.Help" xml:space="preserve">
+    <value>Put your value for Client ID here.</value>
+  </data>
+  <data name="lblClientid.Text" xml:space="preserve">
+    <value>Client ID</value>
+  </data>
   <data name="lblFrameHeight.Help" xml:space="preserve">
     <value>Put your value for Frame Height here.</value>
   </data>
@@ -137,5 +143,11 @@
   </data>
   <data name="lblGuid.Text" xml:space="preserve">
     <value>GUID</value>
+  </data>
+  <data name="lblPrivatekey.Help" xml:space="preserve">
+    <value>Put your value for Private Key here.</value>
+  </data>
+  <data name="lblPrivatekey.Text" xml:space="preserve">
+    <value>Private Key</value>
   </data>
 </root>
