@@ -1,0 +1,14 @@
+﻿<h3>EmbedViewer</h3>
+<p class="Contributor">
+	Groupdocs <br />
+	<a href="mailto:support@groupdocs.com">support@groupdocs.com</a><br />
+	<a href=http://www.groupdocs.com>http://www.groupdocs.com</a><br />
+</p>
+<hr/>
+<div class="License">
+	<h3>About the EmbedViewer</h3>
+	<p class="Owner">
+		<b>Version CHANGEME</b><br /><br />
+	</p>
+	<p>Description about version.</p>
+</div>
