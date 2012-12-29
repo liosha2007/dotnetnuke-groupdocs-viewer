@@ -1,55 +1,40 @@
 <%@ Control Language="C#" AutoEventWireup="false" Inherits="DotNetNuke.Modules.EmbedViewer.Settings" Codebehind="Settings.ascx.cs" %>
 <%@ Register TagName="label" TagPrefix="dnn" Src="~/controls/labelcontrol.ascx" %>
+<script runat="server">
 
-
+    protected void btnUpdate_Click(object sender, EventArgs e)
+    {
+        if (!"".Equals(txtClientid.Text) && !"".Equals(txtPrivatekey.Text))
+        {
+            trwFiles.Nodes.Add(new TreeNode("1223"));
+        }
+    }
+</script>
 <h2 id="dnnSitePanel-BasicSettings" class="dnnFormSectionHead"><a href="" class="dnnSectionExpanded"><%=LocalizeString("BasicSettings")%></a></h2>
 <fieldset>
-    <script type="text/javascript" language="javascript">
-        $(document).ready(function () {
-            $('#guidTab').click(function () {
-                $('#browseBlock').hide();
-                $('#guidBlock').show();
-                $('#browseTab').removeClass("ui-tabs-selected ui-state-active");
-                $('#guidTab').addClass("ui-tabs-selected ui-state-active");
-                return false;
-            });
-            $('#browseTab').click(function () {
-                $('#guidBlock').hide();
-                $('#browseBlock').show();
-                $('#guidTab').removeClass("ui-tabs-selected ui-state-active");
-                $('#browseTab').addClass("ui-tabs-selected ui-state-active");
-                return false;
-            });
-        });
-    </script>
-    <div>
-        <div>
+    <div class="dnnFormItem">
+        <dnn:label ID="lblClientid" Text="Client ID" runat="server" />
+        <asp:TextBox ID="txtClientid" runat="server" />
+    </div>
+    <div class="dnnFormItem">
+        <dnn:label ID="lblPrivatekey" Text="Private Key" runat="server" />
+        <asp:TextBox ID="txtPrivatekey" runat="server" />
+    </div>
+    <div class="dnnFormItem">
+        <dnn:label ID="Label1" Text="" runat="server" />
+        <asp:Button ID="btnUpdate" Text="Load files" runat="server" 
+             Width="200" onclick="btnUpdate_Click" />
+    </div>
+    <div class="dnnFormItem" align="right">
+        <dnn:label ID="Label2" Text="" runat="server" />
+        <div style="display: inline-block;">
+            <asp:TreeView ID="trwFiles" ShowLines="true" runat="server" ForeColor="#660033" 
+                BorderWidth="1" Height="200px" Width="435px" BorderColor="#C9C9C9" />
         </div>
-        <div class="dnnFormItem">
-            <ul class="dnnAdminTabNav dnnClear ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
-
-                <li id="guidTab" class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active">
-                    <a href="#guidBlock">File GUID</a>
-                </li>
-                <li id="browseTab" class="ui-state-default ui-corner-top">
-                    <a href="#browseBlock">File Browse</a>
-                </li>
-            </ul>
-            <div id="guidBlock">
-                <dnn:Label ID="lblGuid" Text="GUID" runat="server" /> 
-                <asp:TextBox ID="txtGuid" runat="server" />
-            </div>
-            <div id="browseBlock" style="display: none;">
-                <div>
-                    <dnn:label ID="lblClientid" Text="Client ID" runat="server" />
-                    <asp:TextBox ID="txtClientid" runat="server" />
-                </div>
-                <div>
-                    <dnn:label ID="lblPrivatekey" Text="Private Key" runat="server" />
-                    <asp:TextBox ID="txtPrivatekey" runat="server" />
-                </div>
-            </div>
-        </div>
+    </div>
+    <div class="dnnFormItem" style="margin-top: 20px;">
+        <dnn:Label ID="lblGuid" Text="GUID" runat="server" /> 
+        <asp:TextBox ID="txtGuid" runat="server" />
     </div>
     <div class="dnnFormItem">
         <dnn:label ID="lblFrameWidth" Text="Image Width" runat="server" />
