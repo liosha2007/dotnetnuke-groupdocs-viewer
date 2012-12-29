@@ -4,9 +4,14 @@
 
     protected void btnUpdate_Click(object sender, EventArgs e)
     {
-        if (!"".Equals(txtClientid.Text) && !"".Equals(txtPrivatekey.Text))
+        if (!string.IsNullOrEmpty(txtClientid.Text) && !string.IsNullOrEmpty(txtPrivatekey.Text))
         {
-            trwFiles.Nodes.Add(new TreeNode("1223"));
+            lblErrmsg.Visible = false;
+            trwFiles.Nodes.Add(new TreeNode("12334"));
+        }
+        else
+        {
+            lblErrmsg.Visible = true;
         }
     }
 </script>
@@ -23,9 +28,13 @@
     <div class="dnnFormItem">
         <dnn:label ID="Label1" Text="" runat="server" />
         <asp:Button ID="btnUpdate" Text="Load files" runat="server" 
-             Width="200" onclick="btnUpdate_Click" />
+            onclick="btnUpdate_Click" Width="200px" />
     </div>
-    <div class="dnnFormItem" align="right">
+    <div class="dnnFormItem" style="color: Red; margin: 0px;">
+        <dnn:label ID="Label3" Text="" runat="server" />
+        <asp:Label ID="lblErrmsg" Text="Please, fill Client ID and Private Key before!" Visible="false" runat="server" />
+    </div>
+    <div class="dnnFormItem">
         <dnn:label ID="Label2" Text="" runat="server" />
         <div style="display: inline-block;">
             <asp:TreeView ID="trwFiles" ShowLines="true" runat="server" ForeColor="#660033" 
