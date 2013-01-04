@@ -13,6 +13,9 @@
 using System;
 using DotNetNuke.Services.Exceptions;
 using DotNetNuke.Entities.Modules;
+using System.Web.UI.WebControls;
+using Groupdocs.Sdk;
+using Groupdocs.Api.Contract;
 
 
 namespace DotNetNuke.Modules.EmbedViewer
@@ -40,6 +43,7 @@ namespace DotNetNuke.Modules.EmbedViewer
     /// -----------------------------------------------------------------------------
     public partial class Settings : EmbedViewerSettingsBase
     {
+        private const string SERVICE_URL = "https://api.groupdocs.com/v2.0";
 
         #region Base Method Implementations
 
@@ -100,8 +104,86 @@ namespace DotNetNuke.Modules.EmbedViewer
             }
         }
 
-        #endregion
+        /// <summary>
+        /// Load files button click
+        /// </summary>
+        /// <param name="sender">button object</param>
+        /// <param name="e">event object</param>
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtClientid.Text) && !string.IsNullOrEmpty(txtPrivatekey.Text))
+            {
+                lblErrmsg.Visible = false;
 
+                trwFiles.Nodes.Clear();
+
+                GroupdocsService service = new GroupdocsService(SERVICE_URL, txtClientid.Text, txtPrivatekey.Text);
+
+                fillTreeView(service, "/", trwFiles.Nodes);
+
+                
+            }
+            else
+            {
+                lblErrmsg.Visible = true;
+            }
+        }
+
+        private void fillTreeView(GroupdocsService service, string path, TreeNodeCollection nodes)
+        {
+
+            ListEntitiesResult res = service.GetFileSystemEntities(path, 0, -1, null, true, null, null);
+
+            if (res.Count > 0 && res.Files != null && res.Folders != null)
+            {
+                for (int index = 0; index < res.Folders.Length; index++)
+                {
+                    FileSystemFolder folder = res.Folders[index];
+                    TreeNode treeNode = new TreeNode(folder.Name);
+                    treeNode.Value = "";
+                    nodes.Add(treeNode);
+                    fillTreeView(service, path + folder.Name + "/", treeNode.ChildNodes);
+                }
+                for (int index = 0; index < res.Files.Length; index++)
+                {
+                    FileSystemDocument document = res.Files[index];
+                    TreeNode treeNode = new TreeNode(document.Name, document.Guid);
+                    nodes.Add(treeNode);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Tree view node selected
+        /// </summary>
+        /// <param name="sender">tree view object</param>
+        /// <param name="e">event object</param>
+        protected void trwFiles_SelectedNodeChanged(object sender, EventArgs e)
+        {
+            TreeNode treeNode = trwFiles.SelectedNode;
+            trwFiles.CollapseAll();
+            if (treeNode.Value != "")
+            {
+                txtGuid.Text = treeNode.Value;
+                showNode(treeNode);
+            }
+            else
+            {
+                txtGuid.Text = "";
+            }
+        }
+
+        private void showNode(TreeNode treeNode)
+        {
+            treeNode.Select();
+            while (treeNode.Parent != null)
+            {
+                treeNode = treeNode.Parent;
+                treeNode.Expand();
+            }
+        }
+
+        #endregion
     }
 
 }

@@ -99,58 +99,148 @@
             
             </summary>
         </member>
-        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.lblGuid">
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.lblClientid">
             <summary>
-            lblGuid control.
+            lblClientid элемент управления.
             </summary>
             <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.txtClientid">
+            <summary>
+            txtClientid элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.lblPrivatekey">
+            <summary>
+            lblPrivatekey элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.txtPrivatekey">
+            <summary>
+            txtPrivatekey элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.Label1">
+            <summary>
+            Label1 элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.btnUpdate">
+            <summary>
+            btnUpdate элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.Label3">
+            <summary>
+            Label3 элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.lblErrmsg">
+            <summary>
+            lblErrmsg элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.Label2">
+            <summary>
+            Label2 элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.trwFiles">
+            <summary>
+            trwFiles элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.lblGuid">
+            <summary>
+            lblGuid элемент управления.
+            </summary>
+            <remarks>
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
             </remarks>
         </member>
         <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.txtGuid">
             <summary>
-            txtGuid control.
+            txtGuid элемент управления.
             </summary>
             <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
             </remarks>
         </member>
         <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.lblFrameWidth">
             <summary>
-            lblFrameWidth control.
+            lblFrameWidth элемент управления.
             </summary>
             <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
             </remarks>
         </member>
         <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.txtFrameWidth">
             <summary>
-            txtFrameWidth control.
+            txtFrameWidth элемент управления.
             </summary>
             <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
             </remarks>
         </member>
         <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.lblFrameHeight">
             <summary>
-            lblFrameHeight control.
+            lblFrameHeight элемент управления.
             </summary>
             <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
             </remarks>
         </member>
         <member name="F:DotNetNuke.Modules.EmbedViewer.Settings.txtFrameHeight">
             <summary>
-            txtFrameHeight control.
+            txtFrameHeight элемент управления.
             </summary>
             <remarks>
-            Auto-generated field.
-            To modify move field declaration from designer file to code-behind file.
+            Автоматически создаваемое поле.
+            Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
             </remarks>
         </member>
         <member name="M:DotNetNuke.Modules.EmbedViewer.Settings.LoadSettings">
@@ -166,6 +256,20 @@
             UpdateSettings saves the modified settings to the Database
             </summary>
             -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.EmbedViewer.Settings.btnUpdate_Click(System.Object,System.EventArgs)">
+            <summary>
+            Load files button click
+            </summary>
+            <param name="sender">button object</param>
+            <param name="e">event object</param>
+        </member>
+        <member name="M:DotNetNuke.Modules.EmbedViewer.Settings.trwFiles_SelectedNodeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Tree view node selected
+            </summary>
+            <param name="sender">tree view object</param>
+            <param name="e">event object</param>
         </member>
         <member name="T:DotNetNuke.Modules.EmbedViewer.Edit">
             -----------------------------------------------------------------------------

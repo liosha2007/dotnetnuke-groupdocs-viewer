@@ -42,9 +42,45 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
     </Reference>
+    <Reference Include="Groupdocs.Api.Comparison.Contract">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Api.Comparison.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Api.Contract">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Api.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Api.Core.Contract">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Api.Core.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Auxiliary">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Auxiliary.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Common">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Payments.Contract">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Payments.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Sdk">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Security">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Groupdocs.Swagger">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Groupdocs.Swagger.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Microsoft.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http.Extensions">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Microsoft.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Groupdocs.Sdk.1.4.365.4382\lib\NET40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -110,7 +146,6 @@
     </Compile>
     <Compile Include="Settings.ascx.cs">
       <DependentUpon>Settings.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EmbedViewerSettingsBase.cs">
       <SubType>ASPXCodeBehind</SubType>
